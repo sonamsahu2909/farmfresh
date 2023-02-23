@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+	<!-- bootstrap font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+	<!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootsrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- animation  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- bootstrap scipt -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+
+        /* nav var css */
+
+         
+		.navbar-dark .navbar-nav li:hover {
+            background: #631987;
+			padding: 0px 10px;
+            
+        }
+		.navbar-dark .navbar-nav li a{
+			color: #fff !important;
+            font-weight: 600;
+            font-size: 20px;
+		}
+
+		.navbar-dark .navbar-nav .dropdown-item{
+			color: black !important;
+            font-weight: 600;
+            font-size: 20px;
+		}
+
+
+        .bg-success {
+            background-color: rgb(16 199 177) !important;
+            color: rgb(255 255 255) !important;
+         }
+
+        .banner{
+            background-image: url(https://demowebsite12.netlify.app/img/carousel-1.jpg);
+            width: 100%;
+            height: 450px;
+            background-position: center;
+            background-size: cover;
+		 }
+		
+
+
+
+		 .p1{
+		    line-height: 1.5;
+		    word-spacing: 2px; 
+			letter-spacing: 1px;
+			color: #323636ad;
+			text-align: justify;
+		 }
+		 .p2{
+			color: rgb(134, 134, 127);
+		 }
+
+		 .heading{
+			font-weight: bold;
+		 }
+
+
+		 /* about us */
+
+		 .about i{
+			background-image: linear-gradient(rgb(16 199 177), #ff9933);
+			-webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+             transition: .5s;
+		 }
+
+		 
+		 .service{
+			background:rgb(132 249 236/20%);
+			text-align: center;
+			width: 360px;
+			height: 400px;
+			margin: 40px;
+			padding: 40px;
+			color: rgb(14, 14, 14);
+			opacity: 1.0;
+		 }
+		 .service:hover{
+			background: rgb(16 199 177);
+			text-align: center;
+			width: 360px;
+			height: 400px;
+			margin: 40px;
+			padding: 40px;
+			color: white;
+			opacity: 1.0;
+		 }
+
+		
+		 /* client css */
+		 .banner_client{
+            background-image: url(https://demowebsite12.netlify.app/img/testimonial.jpg);
+            width: 100%;
+            height: 800px;
+            background-position: center;
+            background-size: cover;
+			position: relative;
+		 }
+
+		 .client_inner{
+			background: rgb(16 199 177);
+			text-align: center;
+			padding: 30px;
+			margin:210px 0;
+		 }
+
+
+		
+
+		 /* footer css */
+
+	    .img1{
+			background: url(https://demowebsite12.netlify.app/img/footer.png) center bottom no-repeat;
+			opacity:1;
+			margin-top: 100px;
+			color: white;
+			height:400px;
+	        width:100%;
+		}
+		.ts1{
+			background-color: rgb(16, 199, 177);
+			height: 400px;
+			width:100%;
+			opacity:0.9;
+		}
+
+		.nl{
+			margin-top: -50px;
+            margin-bottom: -54px;
+			background:  #FF9933 !important;
+			padding-top: 101px !important;
+		}
+        .line-height{
+			line-height: 2;
+		}
+		 @media(max-width:900px)
+		 {
+			.banner{
+                 height: 400px;
+            }
+		 }
+
+		 @media(max-width:765px){
+			.service{
+			text-align: center;
+			width: 500px;
+			height: 300px;
+			margin: 20px 10px;
+			padding: 10px 10px;
+		 }
+		 }
+		 @media(max-width:1350px){
+			.service1{
+			width: 500px;
+			height: 300px;
+			margin: 20px -32px;
+			padding: 10px 70px;
+		 }
+		 }
+
+		
+
+		 /* footer media query */
+
+		 @media(max-width:990px){
+			.img1{
+				width: 100%;
+				height: 945px;
+			}
+			.ts1{
+			    background-color: rgb(16, 199, 177);
+			    height: 945px;
+			    width:100%;
+			    opacity:0.9;
+		    }
+		   .nl{
+		      	margin-top: 0px;
+                margin-bottom: -51px;
+                padding: 334px 64px !important;
+		    }
+		 }
+		 @media(max-width:775px){
+			.img1{
+				width: 100%;
+				height: 1260px;
+			}
+			.ts1{
+			    background-color: rgb(16, 199, 177);
+			    height: 1260px;
+			    width:100%;
+			    opacity:0.9;
+		    }
+		   .nl{
+			    margin-top: 21px;
+                padding: 48px!important;
+		    }
+		 }
+
+
+		 
+		 
+	</style>
+</head>
+<body>
+    
+    <!-- top bar start -->
+
+	<div class="container-fluid ">
+		<div class="row py-3 align-items-center">
+			<div class="col-md-3">
+				<div class="d-flex align-items-center justify-content-start">
+                    <i class="bi bi-phone-vibrate fs-1 text-success me-2" style="color: rgb(16 199 177) !important ;"></i>
+                    <h2 class="mb-0">+012 345 6789</h2>
+                </div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="d-flex align-items-center justify-content-center font-weight-1200px">
+					 <h1 class="m-0 display-8 text-warning text-center"><span style="color: rgb(16 199 177)">Farm</span>Fresh</h1>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="d-flex align-items-center justify-content-end">
+					 <a class="btn btn-success btn-square rounded-square me-2" style="background-color: rgb(16 199 177) !important; border: none;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-success btn-square rounded-circle me-2" style="background-color: rgb(16 199 177) !important; border: none;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-success btn-square rounded-circle me-2" style="background-color: rgb(16 199 177) !important; border: none;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-success btn-square rounded-circle" style="background-color: rgb(16 199 177) !important; border: none;" href="#"><i class="fab fa-instagram"></i></a>
+				</div>	
+			</div>
+		</div><!-- row end-->
+	</div> <!-- container-fluid end-->
+    
+	<!-- top bar end -->
+
+	<!-- nav bar start -->
+    <div class="navbar bg-success navbar-dark text-white navbar-expand-lg py-3">
+        <div class="container-fluid">
+
+            <!-- mobile view -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#aa">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- mobile view end -->
+
+            <!-- menu start -->
+            <div class="navbar-collapse collapse justify-content-center" id=aa >
+                <ul class="navbar-nav" style="font-weight: 700;">
+                    <li><a href="farmfresh.html" class="nav-link">HOME</a></li>
+                    <li><a href="about1.html" class="nav-link">ABOUT</a></li>
+                    <li><a href="service1.html" class="nav-link">SERVCE</a></li>
+                    <li><a href="product1.html" class="nav-link">PRODUCT</a></li>
+                    <div class="nav-item dropdown ">
+						<li><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PAGES</a>
+							<div class="dropdown-menu m-0 ">
+								<a href="" class="dropdown-item">Blog Grid</a>
+								<a href="" class="dropdown-item">Blog Detail</a>
+								<a href="" class="dropdown-item">Features</a>
+								<a href="" class="dropdown-item">The Team</a>
+								<a href="" class="dropdown-item">Testimonial</a>
+							</div>
+						</li>
+					</div>
+                    <li><a href="contact1.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- menu end -->
+        </div><!--container-fluid end-->
+    </div><!-- navbar end -->
+	
+
+	 <!-- banner div start -->
+     <div class="container-fluid banner">
+		<div class="container">
+			<div class="row pt-5" style="max-width: 1200px; font-weight: bold; align-items: start;">
+				<div class="col-md-5 text-white mt-5">
+					<h3 class="display-4 d-flex mt-2 mb-4" style="font-weight: bolder;">Our Service</h3>
+					<button class="btn btn-primary" style="font-size: 30px; background-color: rgb(16 199 177) !important; border-color:  rgb(16 199 177);">Home</button>
+					<button class="btn btn-warning text-white" style="font-size: 30px; margin-left: 20px;">About Us</button>
+				</div>
+				<div class="col-md-7"></div>
+			</div>
+		</div>
+     </div>
+	 <!-- banner div start -->
+
+	
+
+	 <!-- service start -->
+	 <div class="container-fluid about">
+		<div class="container">
+			<div class="row mt-5">
+				<div class=" col-lg-4 col-md-6 mt-4 pe-5 service1">
+					<h5 class="text-info ps-4">SERVICES</h5>
+					<h1 class="heading ps-4">Organic Farm Services</h1>
+					<p class="p2 ps-4">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit sed stet labore</p>
+					<button class="btn btn-info text-white ms-4">Contact Us</button>
+				</div>
+				<div class="text-center col-md-4 col-md-6 service">
+					<i class="fa fa-carrot text-warning mb-4" style="font-size: 100px;"></i>
+					<h4 class="heading">Fresh Vegetables</h4>
+					<p class="text-center p2">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+				</div>
+				<div class=" text-center col-lg-4 col-md-6  service">
+					<i class="fa fa-apple-alt text-warning mb-4" style="font-size: 100px;"></i>
+					<h4 class="heading">Fresh Vegetables</h4>
+					<p class="text-center p2">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+				</div>
+				<div class="text-center col-lg-4 col-md-6 service">
+					<i class="fa fa-dog text-warning mb-4" style="font-size: 100px;"></i>
+					<h4 class="heading">Fresh Vegetables</h4>
+					<p class="text-center p2">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+				</div>
+				<div class="text-center col-lg-4 col-md-6 service">
+					<i class="fa fa-tractor text-warning mb-4" style="font-size: 100px;"></i>
+					<h4 class="heading">Fresh Vegetables</h4>
+					<p class="text-center p2">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+				</div>
+				<div class="text-center col-lg-4 col-md-6 service">
+					<i class="fa fa-seedling text-warning mb-4" style="font-size: 100px;"></i>
+					<h4 class="heading">Fresh Vegetables</h4>
+					<p class="text-center p2">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+				</div>
+			</div>
+		</div>
+	 </div>
+	 <!-- service end -->
+
+
+
+	 <!-- client name start -->
+	 <div class="container-fluid banner_client">
+		<div class="container">
+			<div class="row" style="max-width: 1200px;">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-white client_inner">
+					<img src="https://demowebsite12.netlify.app/img/testimonial-2.jpg" class="border border-5 border-warning rounded-circle p-2 w-25">
+					<p class="mt-4">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+					<hr class="me-5 ms-5">
+					<h4 class="heading">Client Name</h4>
+					</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+     </div>
+	 <!-- client name end -->
+
+	
+		 <!-- footer css -->
+
+        <div class="img1">
+			<div class="ts1 container-fluid">
+                <div class="container" >
+					<div class="row">
+						<div class="col-lg-8 col-md-6">
+							<div class="row  mt-4 line-height">
+								<div class="col-lg-4 col-md-12 mt-4">
+									<h4>Get In Touch</h4>
+									<i class="bi bi-geo-alt"></i>
+									123 Street, New York, USA
+									<br>
+									<i class="bi bi-envelope-open"></i> &nbsp; info@example.com<br>
+									<i class="bi bi-telephone"></i>+012 345 67890<br>
+									<i class="fa-brands fa-twitter bg-warning rounded-circle p-2"></i>         
+									<i class="fa-brands fa-facebook-f bg-warning rounded-circle p-2"></i>
+									<i class="fa-brands fa-linkedin bg-warning rounded-circle p-2"></i>
+									<i class="fa-brands fa-instagram bg-warning rounded-circle p-2"></i>
+								</div>
+								<div class="col-lg-4 col-md-12 mt-4">
+									<h4>Quick Link</h4>
+									<i class="bi bi-arrow-right"></i>Home<br>
+									<i class="bi bi-arrow-right"></i>About us<br>
+									<i class="bi bi-arrow-right"></i>Our Service<br>
+									<i class="bi bi-arrow-right"></i>Meet The Team<br>
+									<i class="bi bi-arrow-right"></i>Latest Blog<br>
+									<i class="bi bi-arrow-right"></i>Contact Us
+								</div>
+								<div class="col-lg-4 col-md-12 mt-4">
+									<h4>Popular Links</h4>
+									<i class="bi bi-arrow-right"></i>Home<br>
+									<i class="bi bi-arrow-right"></i>About us<br>
+									<i class="bi bi-arrow-right"></i>Our Service<br>
+									<i class="bi bi-arrow-right"></i>Meet The Team<br>
+									<i class="bi bi-arrow-right"></i>Latest Blog<br>
+									<i class="bi bi-arrow-right"></i>Contact Us
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 bg-warning nl p-4  text-center">
+							<h4>Popular Links</h4>
+							<h6>Subscribe Our Newsletter</h6>
+							<p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+							<div class="d-flex">		
+							    <input type="text" placeholder="Your Email" class="form-control">
+								<button class="btn btn-success pe-4 ps-4 me-4" style="border: none;">Sign up</button>
+							</div>
+
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+
+		<div class="container-fluid text-center bg-black text-light">
+			<p class="p-3">© <span class="text-warning">Your Site Name.</span> All Rights Reserved. Designed by<span class="text-warning">PN</span> </p>
+		</div>
+		 <!-- footer css end -->
+
+</body>
+</html>
